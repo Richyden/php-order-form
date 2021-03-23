@@ -10,13 +10,16 @@
 <body>
 <div class="container">
     <h1>Order pizzas in restaurant "the Personal Pizza Processors"</h1>
+
+    <div class="alert alert-success" id="alert"><?php if(isset($form_Complete)) {echo $correctForm;} ?></div>
+    <div class="alert alert-danger" id="incorrect"><?php if(isset($invalid_Form)) {echo $noOrder;} ?></div>
     <nav>
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link active" href="?food=1">Order pizzas</a>
+                <a class="nav-link active" href="?food=pizza">Order pizzas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?food=0">Order drinks</a>
+                <a class="nav-link" href="?food=soft">Order drinks</a>
             </li>
         </ul>
     </nav>

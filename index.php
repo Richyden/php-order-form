@@ -148,4 +148,4 @@ if(isset($mail, $street, $street_Number, $city, $zipcode, $totalValue, $delivery
     }
 }
 
-require './src/form-view.php';
+require 'form-view.php';
